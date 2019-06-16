@@ -1,0 +1,2 @@
+class PlaylistLike < ApplicationRecord
+end

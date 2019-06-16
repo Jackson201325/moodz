@@ -1,0 +1,2 @@
+class ArtistSongLike < ApplicationRecord
+end
