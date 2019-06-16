@@ -1,0 +1,2 @@
+class PlaylistPhoto < ApplicationRecord
+end
