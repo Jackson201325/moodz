@@ -5,5 +5,6 @@ class Artist < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   has_many :artist_albums
-  
+  has_many :fans
+  has_many :artist_song  
 end
