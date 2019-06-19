@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_06_18_140208) do
+ActiveRecord::Schema.define(version: 2019_06_18_232007) do
 
   create_table "album_photos", force: :cascade do |t|
     t.datetime "created_at", null: false
@@ -71,7 +71,18 @@ ActiveRecord::Schema.define(version: 2019_06_18_140208) do
     t.datetime "remember_created_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "first_name"
+    t.string "last_name"
+    t.string "date_of_birth"
+    t.text "bio"
+    t.integer "artist_album_id"
+    t.integer "fan_id"
+    t.integer "artist_song_id"
+    t.string "username"
+    t.index ["artist_album_id"], name: "index_artists_on_artist_album_id"
+    t.index ["artist_song_id"], name: "index_artists_on_artist_song_id"
     t.index ["email"], name: "index_artists_on_email", unique: true
+    t.index ["fan_id"], name: "index_artists_on_fan_id"
     t.index ["reset_password_token"], name: "index_artists_on_reset_password_token", unique: true
   end
 
@@ -151,8 +162,19 @@ ActiveRecord::Schema.define(version: 2019_06_18_140208) do
     t.datetime "remember_created_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "username"
+    t.string "first_name"
+    t.string "last_name"
+    t.integer "follower_id"
+    t.integer "playlist_id"
+    t.integer "user_song_id"
+    t.integer "idol_id"
     t.index ["email"], name: "index_users_on_email", unique: true
+    t.index ["follower_id"], name: "index_users_on_follower_id"
+    t.index ["idol_id"], name: "index_users_on_idol_id"
+    t.index ["playlist_id"], name: "index_users_on_playlist_id"
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+    t.index ["user_song_id"], name: "index_users_on_user_song_id"
   end
 
 end
