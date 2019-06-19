@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_06_18_232007) do
+ActiveRecord::Schema.define(version: 2019_06_19_012133) do
 
   create_table "album_photos", force: :cascade do |t|
     t.datetime "created_at", null: false
@@ -103,6 +103,7 @@ ActiveRecord::Schema.define(version: 2019_06_18_232007) do
   create_table "genres", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "name"
   end
 
   create_table "idols", force: :cascade do |t|
