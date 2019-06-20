@@ -36,7 +36,7 @@ genre1 = Genre.create (
   name: "Rap"
 )
 genre1 = Genre.create (
-  name: "classical"
+  name: "clasical"
 )
 genre1 = Genre.create (
   name: "Reggea"
