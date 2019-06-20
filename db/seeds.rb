@@ -9,6 +9,8 @@ Artist.destroy_all
 ArtistAlbum.destroy_all
 Genre.destroy_all
 
+puts "creating artists"
+
 Artist1 = Artist.create! (
   username: "Jackson",
   email: "artist@artist.com"
@@ -32,21 +34,80 @@ Artist4 = Artist.create! (
   email: "Faker::Internet.email",
   password: 123123,
 )
+
+puts "creating users"
+
+User1 = User.create! (
+  username: Faker::Name.first_name,
+  email: "Faker::Internet.email",
+  password: 123123,
+)
+
+User2 = User.create! (
+  username: Faker::Name.first_name,
+  email: "Faker::Internet.email",
+  password: 123123,
+)
+
+User3 = User.create! (
+  username: Faker::Name.first_name,
+  email: "Faker::Internet.email",
+  password: 123123,
+)
+
+User4 = User.create! (
+  username: Faker::Name.first_name,
+  email: "Faker::Internet.email",
+  password: 123123,
+)
+
+puts "creating genres"
+
 genre1 = Genre.create (
   name: "Rap"
 )
-genre1 = Genre.create (
-  name: "clasical"
+genre2 = Genre.create (
+  name: "Classic"
 )
-genre1 = Genre.create (
-  name: "Reggea"
+genre3 = Genre.create (
+  name: "Reggae"
 )
-genre1 = Genre.create (
+genre4 = Genre.create (
   name: "Pop"
 )
+genre5 = Genre.create (
+  name: "Pop"
+)
+
+puts "creating albums with photos"
 
 ArtistAlbum1 = ArtistAlbum.create(
   name: Faker::Music.album,
   artist_id: rand(1...5),
   genre_id: rand(1..5),
 )
+
+ArtistAlbum2 = ArtistAlbum.create(
+  name: Faker::Music.album,
+  artist_id: rand(1...5),
+  genre_id: rand(1..5),
+)
+
+ArtistAlbum3 = ArtistAlbum.create(
+  name: Faker::Music.album,
+  artist_id: rand(1...5),
+  genre_id: rand(1..5),
+)
+
+ArtistAlbum4 = ArtistAlbum.create(
+  name: Faker::Music.album,
+  artist_id: rand(1...5),
+  genre_id: rand(1..5),
+)
+
+ArtistAlbum5 = ArtistAlbum.create(
+  name: Faker::Music.album,
+  artist_id: rand(1...5),
+  genre_id: rand(1..5),
+)
+
