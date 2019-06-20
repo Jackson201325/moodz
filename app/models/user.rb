@@ -6,5 +6,4 @@ class User < ApplicationRecord
   has_many :followers
   has_many :playlists
   has_many :user_songs
-  belongs_to :fans
 end
