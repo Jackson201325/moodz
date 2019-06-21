@@ -5,11 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-Artist.destroy_all
-ArtistAlbum.destroy_all
-AlbumPhoto.destroy_all
-Genre.destroy_all
-User.destroy_all
+# r
 
 
 puts "creating artists"
@@ -38,6 +34,9 @@ Artist4 = Artist.create!(
   password: 123123,
 )
 
+artists = [Artist1, Artist2, Artist3, Artist4]
+
+
 puts "creating users"
 
 User1 = User.create!(
@@ -64,30 +63,34 @@ User4 = User.create!(
   password: 123123,
 )
 
+users = [User1, User2, User3, User4]
+
 puts "creating genres"
 
-genre1 = Genre.create!(
+Genre1 = Genre.create!(
   name: "Rap"
 )
-genre2 = Genre.create!(
+Genre2 = Genre.create!(
   name: "Classic"
 )
-genre3 = Genre.create!(
+Genre3 = Genre.create!(
   name: "Reggae"
 )
-genre4 = Genre.create!(
+Genre4 = Genre.create!(
   name: "Pop"
 )
-genre5 = Genre.create!(
+Genre5 = Genre.create!(
   name: "House"
 )
+
+genres = [Genre1, Genre2, Genre3, Genre4]
 
 puts "creating albums with photos"
 
 ArtistAlbum1 = ArtistAlbum.create!(
   name: Faker::Music.album,
-  artist_id: rand(1...5),
-  genre_id: rand(1..5),
+  artist: artists.sample,
+  genre: genres.sample,
 )
 
 AlbumPhoto.create!(
@@ -97,8 +100,8 @@ AlbumPhoto.create!(
 
 ArtistAlbum2 = ArtistAlbum.create!(
   name: Faker::Music.album,
-  artist_id: rand(1...5),
-  genre_id: rand(1..5),
+  artist: artists.sample,
+  genre: genres.sample,
 )
 AlbumPhoto.create!(
   artist_album: ArtistAlbum2,
@@ -107,8 +110,8 @@ AlbumPhoto.create!(
 
 ArtistAlbum3 = ArtistAlbum.create!(
   name: Faker::Music.album,
-  artist_id: rand(1...5),
-  genre_id: rand(1..5),
+  artist: artists.sample,
+  genre: genres.sample,
 )
 AlbumPhoto.create!(
   artist_album: ArtistAlbum3,
@@ -118,22 +121,293 @@ AlbumPhoto.create!(
 
 ArtistAlbum4 = ArtistAlbum.create!(
   name: Faker::Music.album,
-  artist_id: rand(1...5),
-  genre_id: rand(1..5),
+  artist: artists.sample,
+  genre: genres.sample,
 )
 AlbumPhoto.create!(
   artist_album: ArtistAlbum4,
   data:'https://img.discogs.com/4TPZGd_rFo1hTonUhpqydN76SXY=/fit-in/500x500/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-5713398-1400653913-1213.jpeg.jpg'
 )
 
-
 ArtistAlbum5 = ArtistAlbum.create!(
   name: Faker::Music.album,
-  artist_id: rand(1...5),
-  genre_id: rand(1..5),
+  artist: artists.sample,
+  genre: genres.sample,
 )
 AlbumPhoto.create!(
   artist_album: ArtistAlbum5,
-  data:'https://geo-media.beatport.com/image/3a2529d9-81b3-4a59-8f87-abda62fc5574.jpg'
+  data:'https://picsum.photos/500'
 )
+
+ArtistAlbum6 = ArtistAlbum.create!(
+  name: Faker::Music.album,
+  artist: artists.sample,
+  genre: genres.sample,
+)
+AlbumPhoto.create!(
+  artist_album: ArtistAlbum6,
+  data:'https://picsum.photos/500'
+)
+
+
+ArtistAlbum7 = ArtistAlbum.create!(
+  name: Faker::Music.album,
+  artist: artists.sample,
+  genre: genres.sample,
+)
+AlbumPhoto.create!(
+  artist_album: ArtistAlbum7,
+  data:'https://picsum.photos/500'
+)
+
+
+ArtistAlbum8 = ArtistAlbum.create!(
+  name: Faker::Music.album,
+  artist: artists.sample,
+  genre: genres.sample,
+)
+AlbumPhoto.create!(
+  artist_album: ArtistAlbum8,
+  data:'https://picsum.photos/500'
+)
+
+
+ArtistAlbum9 = ArtistAlbum.create!(
+  name: Faker::Music.album,
+  artist: artists.sample,
+  genre: genres.sample,
+)
+AlbumPhoto.create!(
+  artist_album: ArtistAlbum9,
+  data:'https://picsum.photos/500'
+)
+
+
+ArtistAlbum10 = ArtistAlbum.create!(
+  name: Faker::Music.album,
+  artist: artists.sample,
+  genre: genres.sample,
+)
+AlbumPhoto.create!(
+  artist_album: ArtistAlbum10,
+  data:'https://picsum.photos/500'
+)
+
+
+ArtistAlbum11 = ArtistAlbum.create!(
+  name: Faker::Music.album,
+  artist: artists.sample,
+  genre: genres.sample,
+)
+AlbumPhoto.create!(
+  artist_album: ArtistAlbum11,
+  data:'https://picsum.photos/500'
+)
+
+
+ArtistAlbum12 = ArtistAlbum.create!(
+  name: Faker::Music.album,
+  artist: artists.sample,
+  genre: genres.sample,
+)
+AlbumPhoto.create!(
+  artist_album: ArtistAlbum12,
+  data:'https://picsum.photos/500'
+)
+
+
+ArtistAlbum13 = ArtistAlbum.create!(
+  name: Faker::Music.album,
+  artist: artists.sample,
+  genre: genres.sample,
+)
+AlbumPhoto.create!(
+  artist_album: ArtistAlbum13,
+  data:'https://picsum.photos/500'
+)
+
+ArtistAlbum14 = ArtistAlbum.create!(
+  name: Faker::Music.album,
+  artist: artists.sample,
+  genre: genres.sample,
+)
+AlbumPhoto.create!(
+  artist_album: ArtistAlbum14,
+  data:'https://picsum.photos/500'
+)
+
+
+ArtistAlbum15 = ArtistAlbum.create!(
+  name: Faker::Music.album,
+  artist: artists.sample,
+  genre: genres.sample,
+)
+AlbumPhoto.create!(
+  artist_album: ArtistAlbum15,
+  data:'https://picsum.photos/500'
+)
+
+
+ArtistAlbum16 = ArtistAlbum.create!(
+  name: Faker::Music.album,
+  artist: artists.sample,
+  genre: genres.sample,
+)
+AlbumPhoto.create!(
+  artist_album: ArtistAlbum16,
+  data:'https://picsum.photos/500'
+)
+
+
+ArtistAlbum17 = ArtistAlbum.create!(
+  name: Faker::Music.album,
+  artist: artists.sample,
+  genre: genres.sample,
+)
+AlbumPhoto.create!(
+  artist_album: ArtistAlbum17,
+  data:'https://picsum.photos/500'
+)
+
+
+ArtistAlbum18 = ArtistAlbum.create!(
+  name: Faker::Music.album,
+  artist: artists.sample,
+  genre: genres.sample,
+)
+AlbumPhoto.create!(
+  artist_album: ArtistAlbum18,
+  data:'https://picsum.photos/500'
+)
+
+
+ArtistAlbum19 = ArtistAlbum.create!(
+  name: Faker::Music.album,
+  artist: artists.sample,
+  genre: genres.sample,
+)
+AlbumPhoto.create!(
+  artist_album: ArtistAlbum19,
+  data:'https://picsum.photos/500'
+)
+
+
+ArtistAlbum20 = ArtistAlbum.create!(
+  name: Faker::Music.album,
+  artist: artists.sample,
+  genre: genres.sample,
+)
+AlbumPhoto.create!(
+  artist_album: ArtistAlbum20,
+  data:'https://picsum.photos/500'
+)
+
+
+ArtistAlbum21 = ArtistAlbum.create!(
+  name: Faker::Music.album,
+  artist: artists.sample,
+  genre: genres.sample,
+)
+AlbumPhoto.create!(
+  artist_album: ArtistAlbum21,
+  data:'https://picsum.photos/500'
+)
+
+
+ArtistAlbum22 = ArtistAlbum.create!(
+  name: Faker::Music.album,
+  artist: artists.sample,
+  genre: genres.sample,
+)
+AlbumPhoto.create!(
+  artist_album: ArtistAlbum22,
+  data:'https://picsum.photos/500'
+)
+
+
+ArtistAlbum23 = ArtistAlbum.create!(
+  name: Faker::Music.album,
+  artist: artists.sample,
+  genre: genres.sample,
+)
+AlbumPhoto.create!(
+  artist_album: ArtistAlbum23,
+  data:'https://picsum.photos/500'
+)
+
+
+ArtistAlbum24 = ArtistAlbum.create!(
+  name: Faker::Music.album,
+  artist: artists.sample,
+  genre: genres.sample,
+)
+AlbumPhoto.create!(
+  artist_album: ArtistAlbum24,
+  data:'https://picsum.photos/500'
+)
+
+
+ArtistAlbum25 = ArtistAlbum.create!(
+  name: Faker::Music.album,
+  artist: artists.sample,
+  genre: genres.sample,
+)
+AlbumPhoto.create!(
+  artist_album: ArtistAlbum25,
+  data:'https://picsum.photos/500'
+)
+
+
+ArtistAlbum26 = ArtistAlbum.create!(
+  name: Faker::Music.album,
+  artist: artists.sample,
+  genre: genres.sample,
+)
+AlbumPhoto.create!(
+  artist_album: ArtistAlbum25,
+  data:'https://picsum.photos/500'
+)
+
+
+ArtistAlbum27 = ArtistAlbum.create!(
+  name: Faker::Music.album,
+  artist: artists.sample,
+  genre: genres.sample,
+)
+AlbumPhoto.create!(
+  artist_album: ArtistAlbum27,
+  data:'https://picsum.photos/500'
+)
+
+
+ArtistAlbum28 = ArtistAlbum.create!(
+  name: Faker::Music.album,
+  artist: artists.sample,
+  genre: genres.sample,
+)
+AlbumPhoto.create!(
+  artist_album: ArtistAlbum28,
+  data:'https://picsum.photos/500'
+)
+
+ArtistAlbum29 = ArtistAlbum.create!(
+  name: Faker::Music.album,
+  artist: artists.sample,
+  genre: genres.sample,
+)
+AlbumPhoto.create!(
+  artist_album: ArtistAlbum29,
+  data:'https://picsum.photos/500'
+)
+
+ArtistAlbum30 = ArtistAlbum.create!(
+  name: Faker::Music.album,
+  artist: artists.sample,
+  genre: genres.sample,
+)
+AlbumPhoto.create!(
+  artist_album: ArtistAlbum30,
+  data:'https://picsum.photos/500'
+)
+
 
