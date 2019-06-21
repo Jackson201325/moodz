@@ -798,13 +798,77 @@ artist_songs = [
   ArtistSong61, ArtistSong62, ArtistSong63, ArtistSong64, ArtistSong65, ArtistSong66, ArtistSong67, ArtistSong68, ArtistSong69, ArtistSong70,
 ]
 
+puts "creating Playlists"
+
 Playlist1 = Playlist.create!(
-  name: Faker::ProgrammingLanguage.name
-  artist_songs: artist_songs.sample,
-  
+  name: Faker::ProgrammingLanguage.name,
+  description: Faker::Lorem.paragraph,
+  user: users.sample,
 )
 
+Playlist2 = Playlist.create!(
+  name: Faker::ProgrammingLanguage.name,
+  description: Faker::Lorem.paragraph,
+  user: users.sample,
+)
 
+Playlist3 = Playlist.create!(
+  name: Faker::ProgrammingLanguage.name,
+  description: Faker::Lorem.paragraph,
+  user: users.sample,
+)
+
+Playlist4 = Playlist.create!(
+  name: Faker::ProgrammingLanguage.name,
+  description: Faker::Lorem.paragraph,
+  user: users.sample,
+)
+
+Playlist5 = Playlist.create!(
+  name: Faker::ProgrammingLanguage.name,
+  description: Faker::Lorem.paragraph,
+  user: users.sample,
+)
+
+Playlist6 = Playlist.create!(
+  name: Faker::ProgrammingLanguage.name,
+  description: Faker::Lorem.paragraph,
+  user: users.sample,
+)
+
+Playlist7 = Playlist.create!(
+  name: Faker::ProgrammingLanguage.name,
+  description: Faker::Lorem.paragraph,
+  user: users.sample,
+)
+
+Playlist8 = Playlist.create!(
+  name: Faker::ProgrammingLanguage.name,
+  description: Faker::Lorem.paragraph,
+  user: users.sample,
+)
+
+Playlist9 = Playlist.create!(
+  name: Faker::ProgrammingLanguage.name,
+  description: Faker::Lorem.paragraph,
+  user: users.sample,
+)
+
+Playlist10 = Playlist.create!(
+  name: Faker::ProgrammingLanguage.name,
+  description: Faker::Lorem.paragraph,
+  user: users.sample,
+)
+
+playlists = [Playlist1, Playlist2, Playlist3, Playlist4, Playlist5, Playlist6, Playlist7, Playlist8, Playlist9, Playlist10]
+
+
+playlists.each do |playlist|
+  PlaylistPhoto.create!(
+    playlist: playlist,
+    data: 'https://picsum.photos/500'
+  )
+end
 
 
 

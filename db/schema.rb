@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_06_21_171901) do
+ActiveRecord::Schema.define(version: 2019_06_21_181336) do
 
   create_table "album_photos", force: :cascade do |t|
     t.datetime "created_at", null: false
@@ -130,6 +130,9 @@ ActiveRecord::Schema.define(version: 2019_06_21_171901) do
   create_table "playlist_photos", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "playlist_id"
+    t.string "data"
+    t.index ["playlist_id"], name: "index_playlist_photos_on_playlist_id"
   end
 
   create_table "playlists", force: :cascade do |t|
@@ -140,9 +143,11 @@ ActiveRecord::Schema.define(version: 2019_06_21_171901) do
     t.integer "playlist_photo_id"
     t.integer "artist_song_id"
     t.integer "playlist_like_id"
+    t.integer "user_id"
     t.index ["artist_song_id"], name: "index_playlists_on_artist_song_id"
     t.index ["playlist_like_id"], name: "index_playlists_on_playlist_like_id"
     t.index ["playlist_photo_id"], name: "index_playlists_on_playlist_photo_id"
+    t.index ["user_id"], name: "index_playlists_on_user_id"
   end
 
   create_table "user_photos", force: :cascade do |t|
