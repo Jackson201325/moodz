@@ -89,11 +89,11 @@ ArtistAlbum1 = ArtistAlbum.create!(
   artist_id: rand(1...5),
   genre_id: rand(1..5),
 )
+
 AlbumPhoto.create!(
   artist_album: ArtistAlbum1,
-  remote_data_url:'https://geo-media.beatport.com/image/bbff4662-7a47-4740-b366-d95162064ce3.jpg'
+  data:'https://geo-media.beatport.com/image/bbff4662-7a47-4740-b366-d95162064ce3.jpg'
 )
-
 
 ArtistAlbum2 = ArtistAlbum.create!(
   name: Faker::Music.album,
@@ -102,7 +102,7 @@ ArtistAlbum2 = ArtistAlbum.create!(
 )
 AlbumPhoto.create!(
   artist_album: ArtistAlbum2,
-  remote_data_url:'https://geo-media.beatport.com/image/85813b9f-1d13-4083-95e2-5128ec17f4e9.jpg'
+  data:'https://geo-media.beatport.com/image/85813b9f-1d13-4083-95e2-5128ec17f4e9.jpg'
 )
 
 ArtistAlbum3 = ArtistAlbum.create!(
@@ -112,7 +112,7 @@ ArtistAlbum3 = ArtistAlbum.create!(
 )
 AlbumPhoto.create!(
   artist_album: ArtistAlbum3,
-  remote_data_url:'https://f4.bcbits.com/img/a0756037320_10.jpg'
+  data:'https://f4.bcbits.com/img/a0756037320_10.jpg'
 )
 
 
@@ -123,7 +123,7 @@ ArtistAlbum4 = ArtistAlbum.create!(
 )
 AlbumPhoto.create!(
   artist_album: ArtistAlbum4,
-  remote_data_url:'https://img.discogs.com/4TPZGd_rFo1hTonUhpqydN76SXY=/fit-in/500x500/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-5713398-1400653913-1213.jpeg.jpg'
+  data:'https://img.discogs.com/4TPZGd_rFo1hTonUhpqydN76SXY=/fit-in/500x500/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-5713398-1400653913-1213.jpeg.jpg'
 )
 
 
@@ -134,6 +134,6 @@ ArtistAlbum5 = ArtistAlbum.create!(
 )
 AlbumPhoto.create!(
   artist_album: ArtistAlbum5,
-  remote_data_url:'https://geo-media.beatport.com/image/3a2529d9-81b3-4a59-8f87-abda62fc5574.jpg'
+  data:'https://geo-media.beatport.com/image/3a2529d9-81b3-4a59-8f87-abda62fc5574.jpg'
 )
 
