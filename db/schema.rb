@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_06_21_103455) do
+ActiveRecord::Schema.define(version: 2019_06_21_171901) do
 
   create_table "album_photos", force: :cascade do |t|
     t.datetime "created_at", null: false
@@ -105,7 +105,10 @@ ActiveRecord::Schema.define(version: 2019_06_21_103455) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "name"
+    t.integer "artist_song_id"
     t.integer "artist_album_id"
+    t.index ["artist_album_id"], name: "index_genres_on_artist_album_id"
+    t.index ["artist_song_id"], name: "index_genres_on_artist_song_id"
   end
 
   create_table "idols", force: :cascade do |t|
