@@ -90,7 +90,7 @@ puts "creating albums with photos"
 ArtistAlbum1 = ArtistAlbum.create!(
   name: Faker::Music.album,
   artist: artists.sample,
-  genre: genres.sample,
+  genre: genres.sample
 )
 
 AlbumPhoto.create!(
@@ -101,7 +101,7 @@ AlbumPhoto.create!(
 ArtistAlbum2 = ArtistAlbum.create!(
   name: Faker::Music.album,
   artist: artists.sample,
-  genre: genres.sample,
+  genre: genres.sample
 )
 AlbumPhoto.create!(
   artist_album: ArtistAlbum2,
@@ -111,7 +111,7 @@ AlbumPhoto.create!(
 ArtistAlbum3 = ArtistAlbum.create!(
   name: Faker::Music.album,
   artist: artists.sample,
-  genre: genres.sample,
+  genre: genres.sample
 )
 AlbumPhoto.create!(
   artist_album: ArtistAlbum3,
@@ -122,7 +122,7 @@ AlbumPhoto.create!(
 ArtistAlbum4 = ArtistAlbum.create!(
   name: Faker::Music.album,
   artist: artists.sample,
-  genre: genres.sample,
+  genre: genres.sample
 )
 AlbumPhoto.create!(
   artist_album: ArtistAlbum4,
@@ -132,7 +132,7 @@ AlbumPhoto.create!(
 ArtistAlbum5 = ArtistAlbum.create!(
   name: Faker::Music.album,
   artist: artists.sample,
-  genre: genres.sample,
+  genre: genres.sample
 )
 AlbumPhoto.create!(
   artist_album: ArtistAlbum5,
@@ -142,7 +142,7 @@ AlbumPhoto.create!(
 ArtistAlbum6 = ArtistAlbum.create!(
   name: Faker::Music.album,
   artist: artists.sample,
-  genre: genres.sample,
+  genre: genres.sample
 )
 AlbumPhoto.create!(
   artist_album: ArtistAlbum6,
@@ -153,7 +153,7 @@ AlbumPhoto.create!(
 ArtistAlbum7 = ArtistAlbum.create!(
   name: Faker::Music.album,
   artist: artists.sample,
-  genre: genres.sample,
+  genre: genres.sample
 )
 AlbumPhoto.create!(
   artist_album: ArtistAlbum7,
@@ -164,7 +164,7 @@ AlbumPhoto.create!(
 ArtistAlbum8 = ArtistAlbum.create!(
   name: Faker::Music.album,
   artist: artists.sample,
-  genre: genres.sample,
+  genre: genres.sample
 )
 AlbumPhoto.create!(
   artist_album: ArtistAlbum8,
@@ -175,7 +175,7 @@ AlbumPhoto.create!(
 ArtistAlbum9 = ArtistAlbum.create!(
   name: Faker::Music.album,
   artist: artists.sample,
-  genre: genres.sample,
+  genre: genres.sample
 )
 AlbumPhoto.create!(
   artist_album: ArtistAlbum9,
@@ -186,7 +186,7 @@ AlbumPhoto.create!(
 ArtistAlbum10 = ArtistAlbum.create!(
   name: Faker::Music.album,
   artist: artists.sample,
-  genre: genres.sample,
+  genre: genres.sample
 )
 AlbumPhoto.create!(
   artist_album: ArtistAlbum10,
@@ -197,7 +197,7 @@ AlbumPhoto.create!(
 ArtistAlbum11 = ArtistAlbum.create!(
   name: Faker::Music.album,
   artist: artists.sample,
-  genre: genres.sample,
+  genre: genres.sample
 )
 AlbumPhoto.create!(
   artist_album: ArtistAlbum11,
@@ -208,7 +208,7 @@ AlbumPhoto.create!(
 ArtistAlbum12 = ArtistAlbum.create!(
   name: Faker::Music.album,
   artist: artists.sample,
-  genre: genres.sample,
+  genre: genres.sample
 )
 AlbumPhoto.create!(
   artist_album: ArtistAlbum12,
@@ -219,7 +219,7 @@ AlbumPhoto.create!(
 ArtistAlbum13 = ArtistAlbum.create!(
   name: Faker::Music.album,
   artist: artists.sample,
-  genre: genres.sample,
+  genre: genres.sample
 )
 AlbumPhoto.create!(
   artist_album: ArtistAlbum13,
@@ -229,7 +229,7 @@ AlbumPhoto.create!(
 ArtistAlbum14 = ArtistAlbum.create!(
   name: Faker::Music.album,
   artist: artists.sample,
-  genre: genres.sample,
+  genre: genres.sample
 )
 AlbumPhoto.create!(
   artist_album: ArtistAlbum14,
@@ -240,7 +240,7 @@ AlbumPhoto.create!(
 ArtistAlbum15 = ArtistAlbum.create!(
   name: Faker::Music.album,
   artist: artists.sample,
-  genre: genres.sample,
+  genre: genres.sample
 )
 AlbumPhoto.create!(
   artist_album: ArtistAlbum15,
@@ -251,7 +251,7 @@ AlbumPhoto.create!(
 ArtistAlbum16 = ArtistAlbum.create!(
   name: Faker::Music.album,
   artist: artists.sample,
-  genre: genres.sample,
+  genre: genres.sample
 )
 AlbumPhoto.create!(
   artist_album: ArtistAlbum16,
@@ -262,7 +262,7 @@ AlbumPhoto.create!(
 ArtistAlbum17 = ArtistAlbum.create!(
   name: Faker::Music.album,
   artist: artists.sample,
-  genre: genres.sample,
+  genre: genres.sample
 )
 AlbumPhoto.create!(
   artist_album: ArtistAlbum17,
@@ -273,7 +273,7 @@ AlbumPhoto.create!(
 ArtistAlbum18 = ArtistAlbum.create!(
   name: Faker::Music.album,
   artist: artists.sample,
-  genre: genres.sample,
+  genre: genres.sample
 )
 AlbumPhoto.create!(
   artist_album: ArtistAlbum18,
@@ -284,7 +284,7 @@ AlbumPhoto.create!(
 ArtistAlbum19 = ArtistAlbum.create!(
   name: Faker::Music.album,
   artist: artists.sample,
-  genre: genres.sample,
+  genre: genres.sample
 )
 AlbumPhoto.create!(
   artist_album: ArtistAlbum19,
@@ -295,7 +295,7 @@ AlbumPhoto.create!(
 ArtistAlbum20 = ArtistAlbum.create!(
   name: Faker::Music.album,
   artist: artists.sample,
-  genre: genres.sample,
+  genre: genres.sample
 )
 AlbumPhoto.create!(
   artist_album: ArtistAlbum20,
@@ -306,7 +306,7 @@ AlbumPhoto.create!(
 ArtistAlbum21 = ArtistAlbum.create!(
   name: Faker::Music.album,
   artist: artists.sample,
-  genre: genres.sample,
+  genre: genres.sample
 )
 AlbumPhoto.create!(
   artist_album: ArtistAlbum21,
@@ -317,7 +317,7 @@ AlbumPhoto.create!(
 ArtistAlbum22 = ArtistAlbum.create!(
   name: Faker::Music.album,
   artist: artists.sample,
-  genre: genres.sample,
+  genre: genres.sample
 )
 AlbumPhoto.create!(
   artist_album: ArtistAlbum22,
@@ -328,7 +328,7 @@ AlbumPhoto.create!(
 ArtistAlbum23 = ArtistAlbum.create!(
   name: Faker::Music.album,
   artist: artists.sample,
-  genre: genres.sample,
+  genre: genres.sample
 )
 AlbumPhoto.create!(
   artist_album: ArtistAlbum23,
@@ -339,7 +339,7 @@ AlbumPhoto.create!(
 ArtistAlbum24 = ArtistAlbum.create!(
   name: Faker::Music.album,
   artist: artists.sample,
-  genre: genres.sample,
+  genre: genres.sample
 )
 AlbumPhoto.create!(
   artist_album: ArtistAlbum24,
@@ -350,7 +350,7 @@ AlbumPhoto.create!(
 ArtistAlbum25 = ArtistAlbum.create!(
   name: Faker::Music.album,
   artist: artists.sample,
-  genre: genres.sample,
+  genre: genres.sample
 )
 AlbumPhoto.create!(
   artist_album: ArtistAlbum25,
@@ -361,7 +361,7 @@ AlbumPhoto.create!(
 ArtistAlbum26 = ArtistAlbum.create!(
   name: Faker::Music.album,
   artist: artists.sample,
-  genre: genres.sample,
+  genre: genres.sample
 )
 AlbumPhoto.create!(
   artist_album: ArtistAlbum25,
@@ -372,7 +372,7 @@ AlbumPhoto.create!(
 ArtistAlbum27 = ArtistAlbum.create!(
   name: Faker::Music.album,
   artist: artists.sample,
-  genre: genres.sample,
+  genre: genres.sample
 )
 AlbumPhoto.create!(
   artist_album: ArtistAlbum27,
@@ -383,7 +383,7 @@ AlbumPhoto.create!(
 ArtistAlbum28 = ArtistAlbum.create!(
   name: Faker::Music.album,
   artist: artists.sample,
-  genre: genres.sample,
+  genre: genres.sample
 )
 AlbumPhoto.create!(
   artist_album: ArtistAlbum28,
@@ -393,7 +393,7 @@ AlbumPhoto.create!(
 ArtistAlbum29 = ArtistAlbum.create!(
   name: Faker::Music.album,
   artist: artists.sample,
-  genre: genres.sample,
+  genre: genres.sample
 )
 AlbumPhoto.create!(
   artist_album: ArtistAlbum29,
@@ -403,7 +403,7 @@ AlbumPhoto.create!(
 ArtistAlbum30 = ArtistAlbum.create!(
   name: Faker::Music.album,
   artist: artists.sample,
-  genre: genres.sample,
+  genre: genres.sample
 )
 AlbumPhoto.create!(
   artist_album: ArtistAlbum30,
