@@ -37,12 +37,16 @@ Artist4 = Artist.create!(
 artists = [Artist1, Artist2, Artist3, Artist4]
 
 
-puts "creating users"
+puts "creating users with userphoto"
 
 User1 = User.create!(
   username: Faker::Name.first_name,
   email: Faker::Internet.email,
   password: 123123,
+)
+UserPhoto.create!(
+  user: User1,
+  remote_data_url:'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80'
 )
 
 User2 = User.create!(
@@ -50,17 +54,29 @@ User2 = User.create!(
   email: Faker::Internet.email,
   password: 123123,
 )
+UserPhoto.create!(
+  user: User2,
+  remote_data_url:'https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80'
+)
 
 User3 = User.create!(
   username: Faker::Name.first_name,
   email: Faker::Internet.email,
   password: 123123,
 )
+UserPhoto.create!(
+  user: User3,
+  remote_data_url:'https://images.unsplash.com/photo-1541271696563-3be2f555fc4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80'
+)
 
 User4 = User.create!(
   username: Faker::Name.first_name,
   email: Faker::Internet.email,
   password: 123123,
+)
+UserPhoto.create!(
+  user: User3,
+  remote_data_url:'https://images.unsplash.com/photo-1542624937-8d1e9f53c1b9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1502&q=80'
 )
 
 users = [User1, User2, User3, User4]
