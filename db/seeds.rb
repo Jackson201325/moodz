@@ -37,12 +37,16 @@ Artist4 = Artist.create!(
 artists = [Artist1, Artist2, Artist3, Artist4]
 
 
-puts "creating users"
+puts "creating users with userphoto"
 
 User1 = User.create!(
   username: Faker::Name.first_name,
   email: Faker::Internet.email,
   password: 123123,
+)
+UserPhoto.create!(
+  user: User1,
+  remote_data_url:'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80'
 )
 
 User2 = User.create!(
@@ -50,17 +54,29 @@ User2 = User.create!(
   email: Faker::Internet.email,
   password: 123123,
 )
+UserPhoto.create!(
+  user: User2,
+  remote_data_url:'https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80'
+)
 
 User3 = User.create!(
   username: Faker::Name.first_name,
   email: Faker::Internet.email,
   password: 123123,
 )
+UserPhoto.create!(
+  user: User3,
+  remote_data_url:'https://images.unsplash.com/photo-1541271696563-3be2f555fc4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80'
+)
 
 User4 = User.create!(
   username: Faker::Name.first_name,
   email: Faker::Internet.email,
   password: 123123,
+)
+UserPhoto.create!(
+  user: User3,
+  remote_data_url:'https://images.unsplash.com/photo-1542624937-8d1e9f53c1b9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1502&q=80'
 )
 
 users = [User1, User2, User3, User4]
@@ -92,10 +108,9 @@ ArtistAlbum1 = ArtistAlbum.create!(
   artist: artists.sample,
   genre: genres.sample,
 )
-
 AlbumPhoto.create!(
   artist_album: ArtistAlbum1,
-  data:'https://geo-media.beatport.com/image/bbff4662-7a47-4740-b366-d95162064ce3.jpg'
+  remote_data_url:'https://geo-media.beatport.com/image/bbff4662-7a47-4740-b366-d95162064ce3.jpg'
 )
 
 ArtistAlbum2 = ArtistAlbum.create!(
@@ -105,7 +120,7 @@ ArtistAlbum2 = ArtistAlbum.create!(
 )
 AlbumPhoto.create!(
   artist_album: ArtistAlbum2,
-  data:'https://geo-media.beatport.com/image/85813b9f-1d13-4083-95e2-5128ec17f4e9.jpg'
+  remote_data_url:'https://geo-media.beatport.com/image/85813b9f-1d13-4083-95e2-5128ec17f4e9.jpg'
 )
 
 ArtistAlbum3 = ArtistAlbum.create!(
@@ -115,7 +130,7 @@ ArtistAlbum3 = ArtistAlbum.create!(
 )
 AlbumPhoto.create!(
   artist_album: ArtistAlbum3,
-  data:'https://f4.bcbits.com/img/a0756037320_10.jpg'
+  remote_data_url:'https://f4.bcbits.com/img/a0756037320_10.jpg'
 )
 
 
@@ -126,7 +141,7 @@ ArtistAlbum4 = ArtistAlbum.create!(
 )
 AlbumPhoto.create!(
   artist_album: ArtistAlbum4,
-  data:'https://img.discogs.com/4TPZGd_rFo1hTonUhpqydN76SXY=/fit-in/500x500/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-5713398-1400653913-1213.jpeg.jpg'
+  remote_data_url:'https://img.discogs.com/4TPZGd_rFo1hTonUhpqydN76SXY=/fit-in/500x500/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-5713398-1400653913-1213.jpeg.jpg'
 )
 
 ArtistAlbum5 = ArtistAlbum.create!(
@@ -136,7 +151,7 @@ ArtistAlbum5 = ArtistAlbum.create!(
 )
 AlbumPhoto.create!(
   artist_album: ArtistAlbum5,
-  data:'https://picsum.photos/500'
+  remote_data_url:'https://picsum.photos/500'
 )
 
 ArtistAlbum6 = ArtistAlbum.create!(
@@ -146,7 +161,7 @@ ArtistAlbum6 = ArtistAlbum.create!(
 )
 AlbumPhoto.create!(
   artist_album: ArtistAlbum6,
-  data:'https://picsum.photos/500'
+  remote_data_url:'https://picsum.photos/500'
 )
 
 
@@ -157,7 +172,7 @@ ArtistAlbum7 = ArtistAlbum.create!(
 )
 AlbumPhoto.create!(
   artist_album: ArtistAlbum7,
-  data:'https://picsum.photos/500'
+  remote_data_url:'https://picsum.photos/500'
 )
 
 
@@ -168,7 +183,7 @@ ArtistAlbum8 = ArtistAlbum.create!(
 )
 AlbumPhoto.create!(
   artist_album: ArtistAlbum8,
-  data:'https://picsum.photos/500'
+  remote_data_url:'https://picsum.photos/500'
 )
 
 
@@ -179,7 +194,7 @@ ArtistAlbum9 = ArtistAlbum.create!(
 )
 AlbumPhoto.create!(
   artist_album: ArtistAlbum9,
-  data:'https://picsum.photos/500'
+  remote_data_url:'https://picsum.photos/500'
 )
 
 
@@ -190,7 +205,7 @@ ArtistAlbum10 = ArtistAlbum.create!(
 )
 AlbumPhoto.create!(
   artist_album: ArtistAlbum10,
-  data:'https://picsum.photos/500'
+  remote_data_url:'https://picsum.photos/500'
 )
 
 
@@ -201,7 +216,7 @@ ArtistAlbum11 = ArtistAlbum.create!(
 )
 AlbumPhoto.create!(
   artist_album: ArtistAlbum11,
-  data:'https://picsum.photos/500'
+  remote_data_url:'https://picsum.photos/500'
 )
 
 
@@ -212,7 +227,7 @@ ArtistAlbum12 = ArtistAlbum.create!(
 )
 AlbumPhoto.create!(
   artist_album: ArtistAlbum12,
-  data:'https://picsum.photos/500'
+  remote_data_url:'https://picsum.photos/500'
 )
 
 
@@ -223,7 +238,7 @@ ArtistAlbum13 = ArtistAlbum.create!(
 )
 AlbumPhoto.create!(
   artist_album: ArtistAlbum13,
-  data:'https://picsum.photos/500'
+  remote_data_url:'https://picsum.photos/500'
 )
 
 ArtistAlbum14 = ArtistAlbum.create!(
@@ -233,7 +248,7 @@ ArtistAlbum14 = ArtistAlbum.create!(
 )
 AlbumPhoto.create!(
   artist_album: ArtistAlbum14,
-  data:'https://picsum.photos/500'
+  remote_data_url:'https://picsum.photos/500'
 )
 
 
@@ -244,7 +259,7 @@ ArtistAlbum15 = ArtistAlbum.create!(
 )
 AlbumPhoto.create!(
   artist_album: ArtistAlbum15,
-  data:'https://picsum.photos/500'
+  remote_data_url:'https://picsum.photos/500'
 )
 
 
@@ -255,7 +270,7 @@ ArtistAlbum16 = ArtistAlbum.create!(
 )
 AlbumPhoto.create!(
   artist_album: ArtistAlbum16,
-  data:'https://picsum.photos/500'
+  remote_data_url:'https://picsum.photos/500'
 )
 
 
@@ -266,7 +281,7 @@ ArtistAlbum17 = ArtistAlbum.create!(
 )
 AlbumPhoto.create!(
   artist_album: ArtistAlbum17,
-  data:'https://picsum.photos/500'
+  remote_data_url:'https://picsum.photos/500'
 )
 
 
@@ -277,7 +292,7 @@ ArtistAlbum18 = ArtistAlbum.create!(
 )
 AlbumPhoto.create!(
   artist_album: ArtistAlbum18,
-  data:'https://picsum.photos/500'
+  remote_data_url:'https://picsum.photos/500'
 )
 
 
@@ -288,7 +303,7 @@ ArtistAlbum19 = ArtistAlbum.create!(
 )
 AlbumPhoto.create!(
   artist_album: ArtistAlbum19,
-  data:'https://picsum.photos/500'
+  remote_data_url:'https://picsum.photos/500'
 )
 
 
@@ -299,7 +314,7 @@ ArtistAlbum20 = ArtistAlbum.create!(
 )
 AlbumPhoto.create!(
   artist_album: ArtistAlbum20,
-  data:'https://picsum.photos/500'
+  remote_data_url:'https://picsum.photos/500'
 )
 
 artist_albums = [ArtistAlbum1, ArtistAlbum2, ArtistAlbum3, ArtistAlbum4, ArtistAlbum5, 
@@ -907,6 +922,7 @@ PlaylistPhoto.create!(
   data: 'https://picsum.photos/500'
 )
 
+<<<<<<< HEAD
 
 list_of_playlists = [Playlist1, Playlist2, Playlist3, Playlist4, Playlist5, Playlist6, Playlist7, Playlist8, Playlist9, Playlist10]
 
@@ -922,3 +938,14 @@ UserSong2 = UserSong.create!(
   user: users.sample,
   artist_song: artist_songs.sample
 )
+=======
+playlists = [Playlist1, Playlist2, Playlist3, Playlist4, Playlist5, Playlist6, Playlist7, Playlist8, Playlist9, Playlist10]
+
+
+playlists.each do |playlist|
+  PlaylistPhoto.create!(
+    playlist: playlist,
+    remote_data_url: 'https://picsum.photos/500'
+  )
+end
+>>>>>>> 26729a7f11b6380c035cc20265e35b2da9782cc3
