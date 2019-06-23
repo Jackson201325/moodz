@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_06_21_181336) do
+ActiveRecord::Schema.define(version: 2019_06_23_152230) do
 
   create_table "album_photos", force: :cascade do |t|
     t.datetime "created_at", null: false
@@ -94,13 +94,6 @@ ActiveRecord::Schema.define(version: 2019_06_21_181336) do
     t.index ["user_id"], name: "index_fans_on_user_id"
   end
 
-  create_table "followers", force: :cascade do |t|
-    t.integer "user_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["user_id"], name: "index_followers_on_user_id"
-  end
-
   create_table "genres", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -176,12 +169,10 @@ ActiveRecord::Schema.define(version: 2019_06_21_181336) do
     t.string "username"
     t.string "first_name"
     t.string "last_name"
-    t.integer "follower_id"
     t.integer "playlist_id"
     t.integer "user_song_id"
     t.integer "idol_id"
     t.index ["email"], name: "index_users_on_email", unique: true
-    t.index ["follower_id"], name: "index_users_on_follower_id"
     t.index ["idol_id"], name: "index_users_on_idol_id"
     t.index ["playlist_id"], name: "index_users_on_playlist_id"
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
