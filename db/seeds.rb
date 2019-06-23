@@ -81,6 +81,17 @@ UserPhoto.create!(
 
 users = [User1, User2, User3, User4]
 
+puts "creating followers"
+
+users.each do |user|
+  3.times do
+    Follow.create!(
+      following_id: user,
+      follower_id: users.sample
+    )
+  end
+end
+
 puts "creating genres"
 
 Genre1 = Genre.create!(
