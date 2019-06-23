@@ -49,6 +49,7 @@ UserPhoto.create!(
   remote_data_url:'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80'
 )
 
+
 User2 = User.create!(
   username: Faker::Name.first_name,
   email: Faker::Internet.email,
@@ -58,6 +59,7 @@ UserPhoto.create!(
   user: User2,
   remote_data_url:'https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80'
 )
+
 
 User3 = User.create!(
   username: Faker::Name.first_name,
@@ -83,14 +85,61 @@ users = [User1, User2, User3, User4]
 
 puts "creating followers"
 
-users.each do |user|
-  3.times do
-    Follow.create!(
-      following_id: user,
-      follower_id: users.sample
-    )
-  end
-end
+Follow.create!(
+  following_id: User1.id,
+  follower_id: User2.id
+)
+Follow.create!(
+  following_id: User1.id,
+  follower_id: User3.id
+)
+Follow.create!(
+  following_id: User1.id,
+  follower_id: User4.id
+)
+
+
+Follow.create!(
+  following_id: User2.id,
+  follower_id: User1.id
+)
+Follow.create!(
+  following_id: User2.id,
+  follower_id: User3.id
+)
+Follow.create!(
+  following_id: User2.id,
+  follower_id: User4.id
+)
+
+
+Follow.create!(
+  following_id: User3.id,
+  follower_id: User1.id
+)
+Follow.create!(
+  following_id: User3.id,
+  follower_id: User2.id
+)
+Follow.create!(
+  following_id: User3.id,
+  follower_id: User4.id
+)
+
+
+Follow.create!(
+  following_id: User4.id,
+  follower_id: User1.id
+)
+Follow.create!(
+  following_id: User4.id,
+  follower_id: User2.id
+)
+Follow.create!(
+  following_id: User4.id,
+  follower_id: User3.id
+)
+
 
 puts "creating genres"
 

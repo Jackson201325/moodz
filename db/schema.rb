@@ -10,11 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema.define(version: 2019_06_23_152501) do
-=======
 ActiveRecord::Schema.define(version: 2019_06_23_160329) do
->>>>>>> dd4a959cecdf52bb6ec723512a772930922127c2
 
   create_table "album_photos", force: :cascade do |t|
     t.datetime "created_at", null: false
@@ -99,8 +95,8 @@ ActiveRecord::Schema.define(version: 2019_06_23_160329) do
   end
 
   create_table "follows", force: :cascade do |t|
-    t.integer "following_id", null: false
-    t.integer "follower_id", null: false
+    t.integer "following_id"
+    t.integer "follower_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["follower_id"], name: "index_follows_on_follower_id"
