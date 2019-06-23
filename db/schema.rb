@@ -10,7 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 2019_06_23_152501) do
+=======
+ActiveRecord::Schema.define(version: 2019_06_23_160329) do
+>>>>>>> dd4a959cecdf52bb6ec723512a772930922127c2
 
   create_table "album_photos", force: :cascade do |t|
     t.datetime "created_at", null: false
@@ -143,13 +147,11 @@ ActiveRecord::Schema.define(version: 2019_06_23_152501) do
     t.datetime "updated_at", null: false
     t.string "name"
     t.text "description"
-    t.integer "playlist_photo_id"
     t.integer "artist_song_id"
     t.integer "playlist_like_id"
     t.integer "user_id"
     t.index ["artist_song_id"], name: "index_playlists_on_artist_song_id"
     t.index ["playlist_like_id"], name: "index_playlists_on_playlist_like_id"
-    t.index ["playlist_photo_id"], name: "index_playlists_on_playlist_photo_id"
     t.index ["user_id"], name: "index_playlists_on_user_id"
   end
 
@@ -165,7 +167,11 @@ ActiveRecord::Schema.define(version: 2019_06_23_152501) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "artist_song_id"
+    t.integer "user_id"
+    t.integer "playlist_id"
     t.index ["artist_song_id"], name: "index_user_songs_on_artist_song_id"
+    t.index ["playlist_id"], name: "index_user_songs_on_playlist_id"
+    t.index ["user_id"], name: "index_user_songs_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
