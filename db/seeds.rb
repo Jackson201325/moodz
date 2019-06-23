@@ -865,10 +865,6 @@ playlists = [Playlist1, Playlist2, Playlist3, Playlist4, Playlist5, Playlist6, P
 playlists.each do |playlist|
   PlaylistPhoto.create!(
     playlist: playlist,
-    data: 'https://picsum.photos/500'
+    remote_data_url: 'https://picsum.photos/500'
   )
 end
-
-
-
-
