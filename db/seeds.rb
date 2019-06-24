@@ -211,7 +211,7 @@ ArtistAlbum5 = ArtistAlbum.create!(
 )
 AlbumPhoto.create!(
   artist_album: ArtistAlbum5,
-  remote_data_url:'https://picsum.photos/500'
+  remote_data_url:' '
 )
 
 ArtistAlbum6 = ArtistAlbum.create!(
@@ -221,7 +221,7 @@ ArtistAlbum6 = ArtistAlbum.create!(
 )
 AlbumPhoto.create!(
   artist_album: ArtistAlbum6,
-  remote_data_url:'https://picsum.photos/500'
+  remote_data_url:' '
 )
 
 
@@ -232,7 +232,7 @@ ArtistAlbum7 = ArtistAlbum.create!(
 )
 AlbumPhoto.create!(
   artist_album: ArtistAlbum7,
-  remote_data_url:'https://picsum.photos/500'
+  remote_data_url:' '
 )
 
 
@@ -243,7 +243,7 @@ ArtistAlbum8 = ArtistAlbum.create!(
 )
 AlbumPhoto.create!(
   artist_album: ArtistAlbum8,
-  remote_data_url:'https://picsum.photos/500'
+  remote_data_url:' '
 )
 
 
@@ -254,7 +254,7 @@ ArtistAlbum9 = ArtistAlbum.create!(
 )
 AlbumPhoto.create!(
   artist_album: ArtistAlbum9,
-  remote_data_url:'https://picsum.photos/500'
+  remote_data_url:' '
 )
 
 
@@ -265,7 +265,7 @@ ArtistAlbum10 = ArtistAlbum.create!(
 )
 AlbumPhoto.create!(
   artist_album: ArtistAlbum10,
-  remote_data_url:'https://picsum.photos/500'
+  remote_data_url:' '
 )
 
 
@@ -276,7 +276,7 @@ ArtistAlbum11 = ArtistAlbum.create!(
 )
 AlbumPhoto.create!(
   artist_album: ArtistAlbum11,
-  remote_data_url:'https://picsum.photos/500'
+  remote_data_url:' '
 )
 
 
@@ -287,7 +287,7 @@ ArtistAlbum12 = ArtistAlbum.create!(
 )
 AlbumPhoto.create!(
   artist_album: ArtistAlbum12,
-  remote_data_url:'https://picsum.photos/500'
+  remote_data_url:' '
 )
 
 
@@ -298,7 +298,7 @@ ArtistAlbum13 = ArtistAlbum.create!(
 )
 AlbumPhoto.create!(
   artist_album: ArtistAlbum13,
-  remote_data_url:'https://picsum.photos/500'
+  remote_data_url:' '
 )
 
 ArtistAlbum14 = ArtistAlbum.create!(
@@ -308,7 +308,7 @@ ArtistAlbum14 = ArtistAlbum.create!(
 )
 AlbumPhoto.create!(
   artist_album: ArtistAlbum14,
-  remote_data_url:'https://picsum.photos/500'
+  remote_data_url:' '
 )
 
 
@@ -319,7 +319,7 @@ ArtistAlbum15 = ArtistAlbum.create!(
 )
 AlbumPhoto.create!(
   artist_album: ArtistAlbum15,
-  remote_data_url:'https://picsum.photos/500'
+  remote_data_url:' '
 )
 
 
@@ -330,7 +330,7 @@ ArtistAlbum16 = ArtistAlbum.create!(
 )
 AlbumPhoto.create!(
   artist_album: ArtistAlbum16,
-  remote_data_url:'https://picsum.photos/500'
+  remote_data_url:' '
 )
 
 
@@ -341,7 +341,7 @@ ArtistAlbum17 = ArtistAlbum.create!(
 )
 AlbumPhoto.create!(
   artist_album: ArtistAlbum17,
-  remote_data_url:'https://picsum.photos/500'
+  remote_data_url:' '
 )
 
 
@@ -352,7 +352,7 @@ ArtistAlbum18 = ArtistAlbum.create!(
 )
 AlbumPhoto.create!(
   artist_album: ArtistAlbum18,
-  remote_data_url:'https://picsum.photos/500'
+  remote_data_url:' '
 )
 
 
@@ -363,7 +363,7 @@ ArtistAlbum19 = ArtistAlbum.create!(
 )
 AlbumPhoto.create!(
   artist_album: ArtistAlbum19,
-  remote_data_url:'https://picsum.photos/500'
+  remote_data_url:' '
 )
 
 
@@ -374,7 +374,7 @@ ArtistAlbum20 = ArtistAlbum.create!(
 )
 AlbumPhoto.create!(
   artist_album: ArtistAlbum20,
-  remote_data_url:'https://picsum.photos/500'
+  remote_data_url:' '
 )
 
 artist_albums = [ArtistAlbum1, ArtistAlbum2, ArtistAlbum3, ArtistAlbum4, ArtistAlbum5, 
@@ -882,7 +882,7 @@ Playlist1 = Playlist.create!(
 )
 PlaylistPhoto.create!(
   playlist: Playlist1,
-  remote_data_url: 'https://picsum.photos/500'
+  remote_data_url: ' '
 )
 Playlist2 = Playlist.create!(
   name: Faker::ProgrammingLanguage.name,
@@ -891,7 +891,7 @@ Playlist2 = Playlist.create!(
 )
 PlaylistPhoto.create!(
   playlist: Playlist2,
-  remote_data_url: 'https://picsum.photos/500'
+  remote_data_url: ' '
 )
 
 
@@ -902,7 +902,7 @@ Playlist3 = Playlist.create!(
 )
 PlaylistPhoto.create!(
   playlist: Playlist3,
-  remote_data_url: 'https://picsum.photos/500'
+  remote_data_url: ' '
 )
 
 
@@ -913,7 +913,7 @@ Playlist4 = Playlist.create!(
 )
 PlaylistPhoto.create!(
   playlist: Playlist4,
-  remote_data_url: 'https://picsum.photos/500'
+  remote_data_url: ' '
 )
 
 
@@ -924,7 +924,7 @@ Playlist5 = Playlist.create!(
 )
 PlaylistPhoto.create!(
   playlist: Playlist5,
-  remote_data_url: 'https://picsum.photos/500'
+  remote_data_url: ' '
 )
 
 
@@ -935,7 +935,7 @@ Playlist6 = Playlist.create!(
 )
 PlaylistPhoto.create!(
   playlist: Playlist6,
-  remote_data_url: 'https://picsum.photos/500'
+  remote_data_url: ' '
 )
 
 
@@ -946,7 +946,7 @@ Playlist7 = Playlist.create!(
 )
 PlaylistPhoto.create!(
   playlist: Playlist7,
-  remote_data_url: 'https://picsum.photos/500'
+  remote_data_url: ' '
 )
 
 
@@ -957,7 +957,7 @@ Playlist8 = Playlist.create!(
 )
 PlaylistPhoto.create!(
   playlist: Playlist8,
-  remote_data_url: 'https://picsum.photos/500'
+  remote_data_url: ' '
 )
 
 
@@ -968,7 +968,7 @@ Playlist9 = Playlist.create!(
 )
 PlaylistPhoto.create!(
   playlist: Playlist9,
-  remote_data_url: 'https://picsum.photos/500'
+  remote_data_url: ' '
 )
 
 
@@ -979,7 +979,7 @@ Playlist10 = Playlist.create!(
 )
 PlaylistPhoto.create!(
   playlist: Playlist10,
-  remote_data_url: 'https://picsum.photos/500'
+  remote_data_url: ' '
 )
 
 list_of_playlists = [Playlist1, Playlist2, Playlist3, Playlist4, Playlist5, Playlist6, Playlist7, Playlist8, Playlist9, Playlist10]
