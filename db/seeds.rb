@@ -105,7 +105,7 @@ User4 = User.create!(
   password: 123123,
 )
 UserPhoto.create!(
-  user: User3,
+  user: User4,
   remote_data_url:'https://images.unsplash.com/photo-1542624937-8d1e9f53c1b9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1502&q=80'
 )
 
@@ -239,7 +239,7 @@ ArtistAlbum5 = ArtistAlbum.create!(
 )
 AlbumPhoto.create!(
   artist_album: ArtistAlbum5,
-  remote_data_url:' '
+  remote_data_url:'https://geo-media.beatport.com/image/cfb54d50-1475-4ddc-bce3-d885d82d5b5b.jpg'
 )
 
 ArtistAlbum6 = ArtistAlbum.create!(
@@ -249,7 +249,7 @@ ArtistAlbum6 = ArtistAlbum.create!(
 )
 AlbumPhoto.create!(
   artist_album: ArtistAlbum6,
-  remote_data_url:' '
+  remote_data_url:'https://geo-media.beatport.com/image/8a112ede-a082-4683-9682-7c2f3b5fa5f8.jpg'
 )
 
 
@@ -260,7 +260,7 @@ ArtistAlbum7 = ArtistAlbum.create!(
 )
 AlbumPhoto.create!(
   artist_album: ArtistAlbum7,
-  remote_data_url:' '
+  remote_data_url:'https://geo-media.beatport.com/image/fc6821d2-6207-4b93-aba1-d5b2f7e0daf3.jpg'
 )
 
 
@@ -271,7 +271,7 @@ ArtistAlbum8 = ArtistAlbum.create!(
 )
 AlbumPhoto.create!(
   artist_album: ArtistAlbum8,
-  remote_data_url:' '
+  remote_data_url:'https://geo-media.beatport.com/image/f7718951-67c2-493a-8dcd-4aab54f17f9f.jpg'
 )
 
 
@@ -282,7 +282,7 @@ ArtistAlbum9 = ArtistAlbum.create!(
 )
 AlbumPhoto.create!(
   artist_album: ArtistAlbum9,
-  remote_data_url:' '
+  remote_data_url:'https://geo-media.beatport.com/image/8a4f2655-2e76-4885-80ca-2ce82c596864.jpg'
 )
 
 
@@ -293,7 +293,7 @@ ArtistAlbum10 = ArtistAlbum.create!(
 )
 AlbumPhoto.create!(
   artist_album: ArtistAlbum10,
-  remote_data_url:' '
+  remote_data_url:'https://geo-media.beatport.com/image/65db00f1-b0e5-4f4c-b831-588eae84b6a7.jpg'
 )
 
 
@@ -304,7 +304,7 @@ ArtistAlbum11 = ArtistAlbum.create!(
 )
 AlbumPhoto.create!(
   artist_album: ArtistAlbum11,
-  remote_data_url:' '
+  remote_data_url:'https://geo-media.beatport.com/image/ef368915-ee57-4d64-ae22-26ddf82d48da.jpg'
 )
 
 
@@ -315,7 +315,7 @@ ArtistAlbum12 = ArtistAlbum.create!(
 )
 AlbumPhoto.create!(
   artist_album: ArtistAlbum12,
-  remote_data_url:' '
+  remote_data_url:'https://geo-media.beatport.com/image/f097a89e-4ea4-4091-8418-4d69842375c8.jpg'
 )
 
 
@@ -326,7 +326,7 @@ ArtistAlbum13 = ArtistAlbum.create!(
 )
 AlbumPhoto.create!(
   artist_album: ArtistAlbum13,
-  remote_data_url:' '
+  remote_data_url:'https://geo-media.beatport.com/image/e40b5758-c983-4865-af54-5bbea8e59517.jpg'
 )
 
 ArtistAlbum14 = ArtistAlbum.create!(
@@ -336,7 +336,7 @@ ArtistAlbum14 = ArtistAlbum.create!(
 )
 AlbumPhoto.create!(
   artist_album: ArtistAlbum14,
-  remote_data_url:' '
+  remote_data_url:'https://geo-media.beatport.com/image/12498422-6fca-4f7f-bc8a-afb2484213e9.jpg'
 )
 
 
@@ -347,7 +347,7 @@ ArtistAlbum15 = ArtistAlbum.create!(
 )
 AlbumPhoto.create!(
   artist_album: ArtistAlbum15,
-  remote_data_url:' '
+  remote_data_url:'https://geo-media.beatport.com/image/d3767147-e154-4fe0-9154-5933e76fda5e.jpg'
 )
 
 
@@ -358,7 +358,7 @@ ArtistAlbum16 = ArtistAlbum.create!(
 )
 AlbumPhoto.create!(
   artist_album: ArtistAlbum16,
-  remote_data_url:' '
+  remote_data_url:'https://geo-media.beatport.com/image/5377f097-307d-4a52-ace1-d29c5b9e4fb0.jpg'
 )
 
 
@@ -369,7 +369,7 @@ ArtistAlbum17 = ArtistAlbum.create!(
 )
 AlbumPhoto.create!(
   artist_album: ArtistAlbum17,
-  remote_data_url:' '
+  remote_data_url:'https://geo-media.beatport.com/image/b0d5d019-0b72-4357-a3fc-aea9a28f7e96.jpg'
 )
 
 
@@ -380,7 +380,7 @@ ArtistAlbum18 = ArtistAlbum.create!(
 )
 AlbumPhoto.create!(
   artist_album: ArtistAlbum18,
-  remote_data_url:' '
+  remote_data_url:'https://geo-media.beatport.com/image/72b5b011-56b1-4121-9bc5-4a36b910e8ed.jpg'
 )
 
 
@@ -391,7 +391,7 @@ ArtistAlbum19 = ArtistAlbum.create!(
 )
 AlbumPhoto.create!(
   artist_album: ArtistAlbum19,
-  remote_data_url:' '
+  remote_data_url:'https://geo-media.beatport.com/image/cf554060-0f4c-44f1-9128-d60ec2be5a1e.jpg'
 )
 
 
@@ -402,7 +402,7 @@ ArtistAlbum20 = ArtistAlbum.create!(
 )
 AlbumPhoto.create!(
   artist_album: ArtistAlbum20,
-  remote_data_url:' '
+  remote_data_url:'https://geo-media.beatport.com/image/832c98c7-2095-4e8d-b4bb-83a037092cc4.jpg'
 )
 
 artist_albums = [ArtistAlbum1, ArtistAlbum2, ArtistAlbum3, ArtistAlbum4, ArtistAlbum5, 
@@ -910,7 +910,7 @@ Playlist1 = Playlist.create!(
 )
 PlaylistPhoto.create!(
   playlist: Playlist1,
-  remote_data_url: ' '
+  remote_data_url:'https://images.unsplash.com/photo-1534742705189-6e8e7f0f249b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80'
 )
 Playlist2 = Playlist.create!(
   name: Faker::ProgrammingLanguage.name,
@@ -919,7 +919,7 @@ Playlist2 = Playlist.create!(
 )
 PlaylistPhoto.create!(
   playlist: Playlist2,
-  remote_data_url: ' '
+  remote_data_url:'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80'
 )
 
 
@@ -930,7 +930,7 @@ Playlist3 = Playlist.create!(
 )
 PlaylistPhoto.create!(
   playlist: Playlist3,
-  remote_data_url: ' '
+  remote_data_url:'https://images.unsplash.com/photo-1496293455970-f8581aae0e3b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1402&q=80'
 )
 
 
@@ -941,7 +941,7 @@ Playlist4 = Playlist.create!(
 )
 PlaylistPhoto.create!(
   playlist: Playlist4,
-  remote_data_url: ' '
+  remote_data_url:'https://images.unsplash.com/photo-1421217336522-861978fdf33a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80'
 )
 
 
@@ -952,7 +952,7 @@ Playlist5 = Playlist.create!(
 )
 PlaylistPhoto.create!(
   playlist: Playlist5,
-  remote_data_url: ' '
+  remote_data_url:'https://images.unsplash.com/photo-1485777675307-6dd50e4485b5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80'
 )
 
 
@@ -963,7 +963,7 @@ Playlist6 = Playlist.create!(
 )
 PlaylistPhoto.create!(
   playlist: Playlist6,
-  remote_data_url: ' '
+  remote_data_url:'https://images.unsplash.com/photo-1467916971207-e78d69dbe744?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80'
 )
 
 
@@ -974,7 +974,7 @@ Playlist7 = Playlist.create!(
 )
 PlaylistPhoto.create!(
   playlist: Playlist7,
-  remote_data_url: ' '
+  remote_data_url:'https://images.unsplash.com/photo-1465314519189-7e0d87f4442c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80'
 )
 
 
@@ -985,7 +985,7 @@ Playlist8 = Playlist.create!(
 )
 PlaylistPhoto.create!(
   playlist: Playlist8,
-  remote_data_url: ' '
+  remote_data_url:'https://images.unsplash.com/photo-1531786123587-e8873ed178af?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80'
 )
 
 
@@ -996,7 +996,7 @@ Playlist9 = Playlist.create!(
 )
 PlaylistPhoto.create!(
   playlist: Playlist9,
-  remote_data_url: ' '
+  remote_data_url:'https://images.unsplash.com/photo-1533929702053-9986939ea193?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80'
 )
 
 
@@ -1007,7 +1007,7 @@ Playlist10 = Playlist.create!(
 )
 PlaylistPhoto.create!(
   playlist: Playlist10,
-  remote_data_url: ' '
+  remote_data_url:'https://images.unsplash.com/photo-1487180144351-b8472da7d491?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1504&q=80'
 )
 
 list_of_playlists = [Playlist1, Playlist2, Playlist3, Playlist4, Playlist5, Playlist6, Playlist7, Playlist8, Playlist9, Playlist10]
