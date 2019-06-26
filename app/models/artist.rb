@@ -6,5 +6,6 @@ class Artist < ApplicationRecord
 
   has_many :artist_albums
   has_many :fans
-  has_many :artist_song  
+  has_many :artist_songs
+  has_many :artist_photos
 end
