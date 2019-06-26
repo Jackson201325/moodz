@@ -6,7 +6,18 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 # r
-
+Artist.destroy_all
+ArtistPhoto.destroy_all
+User.destroy_all
+UserPhoto.destroy_all
+Follow.destroy_all
+Genre.destroy_all
+ArtistAlbum.destroy_all
+AlbumPhoto.destroy_all
+ArtistSong.destroy_all
+Playlist.destroy_all
+PlaylistPhoto.destroy_all
+UserSong.destroy_all
 
 puts "creating artists"
 
@@ -15,11 +26,20 @@ Artist1 = Artist.create!(
   email: "artist@artist.com",
   password: 123123,
 )
+ArtistPhoto.create!(
+  artist: Artist1,
+  remote_data_url:'https://www.songhall.org/images/uploads/exhibits/Michael_Jackson.jpg'
+)
+
 
 Artist2 = Artist.create!(
-  username: Faker::Music.band,
+  username: "Little Dragon",
   email: Faker::Internet.email,
   password: 123123,
+)
+ArtistPhoto.create!(
+  artist: Artist2,
+  remote_data_url:'https://d14wch1fpzoq5q.cloudfront.net/npl/2014/11/little-dragon-2.jpg'
 )
 
 Artist3 = Artist.create!(
@@ -27,11 +47,19 @@ Artist3 = Artist.create!(
   email: Faker::Internet.email,
   password: 123123,
 )
+ArtistPhoto.create!(
+  artist: Artist3,
+  remote_data_url:'https://www.billboard.com/files/styles/article_main_image/public/media/fifth-harmony-bb3-2015-billboard-03-650.jpg'
+)
 
 Artist4 = Artist.create!(
   username: Faker::Music.band,
   email: Faker::Internet.email,
   password: 123123,
+)
+ArtistPhoto.create!(
+  artist: Artist4,
+  remote_data_url:'https://i.scdn.co/image/b5aae2067db80f694a980e596e7f49618c1206c9'
 )
 
 artists = [Artist1, Artist2, Artist3, Artist4]
