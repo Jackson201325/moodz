@@ -1,2 +1,8 @@
 <h1>Pages#home</h1>
 <p>Find me in app/views/pages/home.html.erb</p>
+
+<%= simple_form_for(@subscriber) do |f| %>
+  <%= f.input :email %>
+  <%= f.input :purpose, as: :radio_buttons, collection: ['Artist', 'Listener', 'Both', 'Neither'], label: 'I am interested in Moodz as an:' %>
+  <%= f.submit 'Sign me up for updates' %>
+<% end %>

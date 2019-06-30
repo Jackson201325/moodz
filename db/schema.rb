@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_06_25_171027) do
+ActiveRecord::Schema.define(version: 2019_06_30_155900) do
 
   create_table "album_photos", force: :cascade do |t|
     t.datetime "created_at", null: false
@@ -102,6 +102,13 @@ ActiveRecord::Schema.define(version: 2019_06_25_171027) do
     t.index ["user_id"], name: "index_fans_on_user_id"
   end
 
+  create_table "followers", force: :cascade do |t|
+    t.integer "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_followers_on_user_id"
+  end
+
   create_table "follows", force: :cascade do |t|
     t.integer "following_id"
     t.integer "follower_id"
@@ -157,6 +164,13 @@ ActiveRecord::Schema.define(version: 2019_06_25_171027) do
     t.index ["artist_song_id"], name: "index_playlists_on_artist_song_id"
     t.index ["playlist_like_id"], name: "index_playlists_on_playlist_like_id"
     t.index ["user_id"], name: "index_playlists_on_user_id"
+  end
+
+  create_table "subscribers", force: :cascade do |t|
+    t.string "email"
+    t.string "purpose"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "user_photos", force: :cascade do |t|
