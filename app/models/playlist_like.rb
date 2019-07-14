@@ -1,2 +1,0 @@
-class PlaylistLike < ApplicationRecord
-end

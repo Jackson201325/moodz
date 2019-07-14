@@ -1,2 +1,0 @@
-class ArtistAlbumLike < ApplicationRecord
-end

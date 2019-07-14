@@ -10,7 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_06_16_193212) do
+ActiveRecord::Schema.define(version: 2019_06_16_201740) do
+
+  create_table "artist_albums", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "artist_songs", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "artists", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -24,19 +35,19 @@ ActiveRecord::Schema.define(version: 2019_06_16_193212) do
     t.index ["reset_password_token"], name: "index_artists_on_reset_password_token", unique: true
   end
 
-  create_table "followers", force: :cascade do |t|
-    t.integer "user_id"
+  create_table "genres", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["user_id"], name: "index_followers_on_user_id"
   end
 
-  create_table "user_photos", force: :cascade do |t|
-    t.integer "user_id"
-    t.string "data"
+  create_table "playlists", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["user_id"], name: "index_user_photos_on_user_id"
+  end
+
+  create_table "user_songs", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "users", force: :cascade do |t|
