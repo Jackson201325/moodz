@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_07_18_211522) do
+ActiveRecord::Schema.define(version: 2019_07_18_211525) do
 
   create_table "artist_albums", force: :cascade do |t|
     t.datetime "created_at", null: false
