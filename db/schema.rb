@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_07_18_211525) do
+ActiveRecord::Schema.define(version: 2019_07_24_012821) do
 
   create_table "artist_albums", force: :cascade do |t|
     t.datetime "created_at", null: false
@@ -28,7 +28,9 @@ ActiveRecord::Schema.define(version: 2019_07_18_211525) do
     t.datetime "updated_at", null: false
     t.integer "genre_id"
     t.integer "artist_album_id"
+    t.integer "artist_id"
     t.index ["artist_album_id"], name: "index_artist_songs_on_artist_album_id"
+    t.index ["artist_id"], name: "index_artist_songs_on_artist_id"
     t.index ["genre_id"], name: "index_artist_songs_on_genre_id"
   end
 
@@ -40,6 +42,7 @@ ActiveRecord::Schema.define(version: 2019_07_18_211525) do
     t.datetime "remember_created_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "username"
     t.index ["email"], name: "index_artists_on_email", unique: true
     t.index ["reset_password_token"], name: "index_artists_on_reset_password_token", unique: true
   end
@@ -64,6 +67,8 @@ ActiveRecord::Schema.define(version: 2019_07_18_211525) do
     t.datetime "updated_at", null: false
     t.string "name"
     t.string "description"
+    t.integer "user_id"
+    t.index ["user_id"], name: "index_playlists_on_user_id"
   end
 
   create_table "posts", force: :cascade do |t|
@@ -79,7 +84,11 @@ ActiveRecord::Schema.define(version: 2019_07_18_211525) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "artist_song_id"
+    t.integer "user_id"
+    t.integer "playlist_id"
     t.index ["artist_song_id"], name: "index_user_songs_on_artist_song_id"
+    t.index ["playlist_id"], name: "index_user_songs_on_playlist_id"
+    t.index ["user_id"], name: "index_user_songs_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -90,6 +99,7 @@ ActiveRecord::Schema.define(version: 2019_07_18_211525) do
     t.datetime "remember_created_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "username"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end

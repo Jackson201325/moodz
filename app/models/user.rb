@@ -6,7 +6,7 @@ class User < ApplicationRecord
   has_many :posts
   has_many :follows_as_follower, source: :follows, foreign_key: :follower_id
   has_many :follows_as_followee, source: :follows, foreign_key: :followee_id
-  has_many :playlists, dependent: :destroy
-  has_many :user_songs, dependent: :destroy
+  has_many :playlists
+  has_many :user_songs
 
 end
