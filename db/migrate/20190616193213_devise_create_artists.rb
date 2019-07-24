@@ -32,7 +32,12 @@ class DeviseCreateArtists < ActiveRecord::Migration[5.2]
       # t.string   :unlock_token # Only if unlock strategy is :email or :both
       # t.datetime :locked_at
 
-
+      t.string :username
+      t.string :first_name
+      t.string :last_name
+      t.date :date_of_birth
+      t.text :bio
+      
       t.timestamps null: false
     end
 

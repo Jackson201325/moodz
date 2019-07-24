@@ -13,6 +13,8 @@ ArtistAlbum.destroy_all
 ArtistSong.destroy_all
 Playlist.destroy_all
 UserSong.destroy_all
+Follow.destroy_all
+Post.destroy_all
 
 puts "creating artists"
 
@@ -434,7 +436,7 @@ artist_albums = [ArtistAlbum1, ArtistAlbum2, ArtistAlbum3, ArtistAlbum4, ArtistA
 puts "creating Playlists"
 
 Playlist1 = Playlist.create!(
-  name: Faker::ProgrammingLanguage.name,
+  title: Faker::ProgrammingLanguage.name,
   description: Faker::Lorem.paragraph,
   user: users.sample
 )
@@ -443,7 +445,7 @@ Playlist1 = Playlist.create!(
 #   remote_data_url:'https://images.unsplash.com/photo-1534742705189-6e8e7f0f249b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80'
 # )
 Playlist2 = Playlist.create!(
-  name: Faker::ProgrammingLanguage.name,
+  title: Faker::ProgrammingLanguage.name,
   description: Faker::Lorem.paragraph,
   user: users.sample,
 )
@@ -454,7 +456,7 @@ Playlist2 = Playlist.create!(
 
 
 Playlist3 = Playlist.create!(
-  name: Faker::ProgrammingLanguage.name,
+  title: Faker::ProgrammingLanguage.name,
   description: Faker::Lorem.paragraph,
   user: users.sample,
 )
@@ -465,7 +467,7 @@ Playlist3 = Playlist.create!(
 
 
 Playlist4 = Playlist.create!(
-  name: Faker::ProgrammingLanguage.name,
+  title: Faker::ProgrammingLanguage.name,
   description: Faker::Lorem.paragraph,
   user: users.sample,
 )
@@ -476,7 +478,7 @@ Playlist4 = Playlist.create!(
 
 
 Playlist5 = Playlist.create!(
-  name: Faker::ProgrammingLanguage.name,
+  title: Faker::ProgrammingLanguage.name,
   description: Faker::Lorem.paragraph,
   user: users.sample,
 )
@@ -487,7 +489,7 @@ Playlist5 = Playlist.create!(
 
 
 Playlist6 = Playlist.create!(
-  name: Faker::ProgrammingLanguage.name,
+  title: Faker::ProgrammingLanguage.name,
   description: Faker::Lorem.paragraph,
   user: users.sample,
 )
@@ -498,7 +500,7 @@ Playlist6 = Playlist.create!(
 
 
 Playlist7 = Playlist.create!(
-  name: Faker::ProgrammingLanguage.name,
+  title: Faker::ProgrammingLanguage.name,
   description: Faker::Lorem.paragraph,
   user: users.sample,
 )
@@ -509,7 +511,7 @@ Playlist7 = Playlist.create!(
 
 
 Playlist8 = Playlist.create!(
-  name: Faker::ProgrammingLanguage.name,
+  title: Faker::ProgrammingLanguage.name,
   description: Faker::Lorem.paragraph,
   user: users.sample,
 )
@@ -520,7 +522,7 @@ Playlist8 = Playlist.create!(
 
 
 Playlist9 = Playlist.create!(
-  name: Faker::ProgrammingLanguage.name,
+  title: Faker::ProgrammingLanguage.name,
   description: Faker::Lorem.paragraph,
   user: users.sample,
 )
@@ -531,7 +533,7 @@ Playlist9 = Playlist.create!(
 
 
 Playlist10 = Playlist.create!(
-  name: Faker::ProgrammingLanguage.name,
+  title: Faker::ProgrammingLanguage.name,
   description: Faker::Lorem.paragraph,
   user: users.sample,
 )
@@ -545,275 +547,275 @@ list_of_playlists = [Playlist1, Playlist2, Playlist3, Playlist4, Playlist5, Play
 puts "creating Songs"
 
 ArtistSong1 = ArtistSong.create!(
-  name: Faker::Company.name,
+  title: Faker::Company.name,
   artist: artists.sample,
   artist_album: artist_albums.sample,
   genre: genres.sample,
 )
 ArtistSong2 = ArtistSong.create!(
-  name: Faker::Company.name,
+  title: Faker::Company.name,
   artist: artists.sample,
   artist_album: artist_albums.sample,
   genre: genres.sample,
 )
 
 ArtistSong3 = ArtistSong.create!(
-  name: Faker::Company.name,
+  title: Faker::Company.name,
   artist: artists.sample,
   artist_album: artist_albums.sample,
   genre: genres.sample,
 )
 
 ArtistSong4 = ArtistSong.create!(
-  name: Faker::Company.name,
+  title: Faker::Company.name,
   artist: artists.sample,
   artist_album: artist_albums.sample,
   genre: genres.sample,
 )
 
 ArtistSong5 = ArtistSong.create!(
-  name: Faker::Company.name,
+  title: Faker::Company.name,
   artist: artists.sample,
   artist_album: artist_albums.sample,
   genre: genres.sample,
 )
 
 ArtistSong6 = ArtistSong.create!(
-  name: Faker::Company.name,
+  title: Faker::Company.name,
   artist: artists.sample,
   artist_album: artist_albums.sample,
   genre: genres.sample,
 )
 
 ArtistSong7 = ArtistSong.create!(
-  name: Faker::Company.name,
+  title: Faker::Company.name,
   artist: artists.sample,
   artist_album: artist_albums.sample,
   genre: genres.sample,
 )
 
 ArtistSong8 = ArtistSong.create!(
-  name: Faker::Company.name,
+  title: Faker::Company.name,
   artist: artists.sample,
   artist_album: artist_albums.sample,
   genre: genres.sample,
 )
 
 ArtistSong9 = ArtistSong.create!(
-  name: Faker::Company.name,
+  title: Faker::Company.name,
   artist: artists.sample,
   artist_album: artist_albums.sample,
   genre: genres.sample,
 )
 
 ArtistSong10 = ArtistSong.create!(
-  name: Faker::Company.name,
+  title: Faker::Company.name,
   artist: artists.sample,
   artist_album: artist_albums.sample,
   genre: genres.sample,
 )
 
 ArtistSong11 = ArtistSong.create!(
-  name: Faker::Company.name,
+  title: Faker::Company.name,
   artist: artists.sample,
   artist_album: artist_albums.sample,
   genre: genres.sample,
 )
 ArtistSong12 = ArtistSong.create!(
-  name: Faker::Company.name,
+  title: Faker::Company.name,
   artist: artists.sample,
   artist_album: artist_albums.sample,
   genre: genres.sample,
 )
 
 ArtistSong13 = ArtistSong.create!(
-  name: Faker::Company.name,
+  title: Faker::Company.name,
   artist: artists.sample,
   artist_album: artist_albums.sample,
   genre: genres.sample,
 )
 ArtistSong14 = ArtistSong.create!(
-  name: Faker::Company.name,
+  title: Faker::Company.name,
   artist: artists.sample,
   artist_album: artist_albums.sample,
   genre: genres.sample,
 )
 ArtistSong15 = ArtistSong.create!(
-  name: Faker::Company.name,
+  title: Faker::Company.name,
   artist: artists.sample,
   artist_album: artist_albums.sample,
   genre: genres.sample,
 )
 ArtistSong16 = ArtistSong.create!(
-  name: Faker::Company.name,
+  title: Faker::Company.name,
   artist: artists.sample,
   artist_album: artist_albums.sample,
   genre: genres.sample,
 )
 ArtistSong17 = ArtistSong.create!(
-  name: Faker::Company.name,
+  title: Faker::Company.name,
   artist: artists.sample,
   artist_album: artist_albums.sample,
   genre: genres.sample,
 )
 ArtistSong18 = ArtistSong.create!(
-  name: Faker::Company.name,
+  title: Faker::Company.name,
   artist: artists.sample,
   artist_album: artist_albums.sample,
   genre: genres.sample,
 )
 ArtistSong19 = ArtistSong.create!(
-  name: Faker::Company.name,
+  title: Faker::Company.name,
   artist: artists.sample,
   artist_album: artist_albums.sample,
   genre: genres.sample,
 )
 ArtistSong20 = ArtistSong.create!(
-  name: Faker::Company.name,
+  title: Faker::Company.name,
   artist: artists.sample,
   artist_album: artist_albums.sample,
   genre: genres.sample,
 )
 ArtistSong21 = ArtistSong.create!(
-  name: Faker::Company.name,
+  title: Faker::Company.name,
   artist: artists.sample,
   artist_album: artist_albums.sample,
   genre: genres.sample,
 )
 ArtistSong22 = ArtistSong.create!(
-  name: Faker::Company.name,
+  title: Faker::Company.name,
   artist: artists.sample,
   artist_album: artist_albums.sample,
   genre: genres.sample,
 )
 
 ArtistSong23 = ArtistSong.create!(
-  name: Faker::Company.name,
+  title: Faker::Company.name,
   artist: artists.sample,
   artist_album: artist_albums.sample,
   genre: genres.sample,
 )
 
 ArtistSong24 = ArtistSong.create!(
-  name: Faker::Company.name,
+  title: Faker::Company.name,
   artist: artists.sample,
   artist_album: artist_albums.sample,
   genre: genres.sample,
 )
 ArtistSong25 = ArtistSong.create!(
-  name: Faker::Company.name,
+  title: Faker::Company.name,
   artist: artists.sample,
   artist_album: artist_albums.sample,
   genre: genres.sample,
 )
 
 ArtistSong26 = ArtistSong.create!(
-  name: Faker::Company.name,
+  title: Faker::Company.name,
   artist: artists.sample,
   artist_album: artist_albums.sample,
   genre: genres.sample,
 )
 
 ArtistSong27 = ArtistSong.create!(
-  name: Faker::Company.name,
+  title: Faker::Company.name,
   artist: artists.sample,
   artist_album: artist_albums.sample,
   genre: genres.sample,
 )
 
 ArtistSong28 = ArtistSong.create!(
-  name: Faker::Company.name,
+  title: Faker::Company.name,
   artist: artists.sample,
   artist_album: artist_albums.sample,
   genre: genres.sample,
 )
 
 ArtistSong29 = ArtistSong.create!(
-  name: Faker::Company.name,
+  title: Faker::Company.name,
   artist: artists.sample,
   artist_album: artist_albums.sample,
   genre: genres.sample,
 )
 
 ArtistSong30 = ArtistSong.create!(
-  name: Faker::Company.name,
+  title: Faker::Company.name,
   artist: artists.sample,
   artist_album: artist_albums.sample,
   genre: genres.sample,
 )
 
 ArtistSong31 = ArtistSong.create!(
-  name: Faker::Company.name,
+  title: Faker::Company.name,
   artist: artists.sample,
   artist_album: artist_albums.sample,
   genre: genres.sample,
 )
 
 ArtistSong32 = ArtistSong.create!(
-  name: Faker::Company.name,
+  title: Faker::Company.name,
   artist: artists.sample,
   artist_album: artist_albums.sample,
   genre: genres.sample,
 )
 
 ArtistSong33 = ArtistSong.create!(
-  name: Faker::Company.name,
+  title: Faker::Company.name,
   artist: artists.sample,
   artist_album: artist_albums.sample,
   genre: genres.sample,
 )
 
 ArtistSong34 = ArtistSong.create!(
-  name: Faker::Company.name,
+  title: Faker::Company.name,
   artist: artists.sample,
   artist_album: artist_albums.sample,
   genre: genres.sample,
 )
 
 ArtistSong35 = ArtistSong.create!(
-  name: Faker::Company.name,
+  title: Faker::Company.name,
   artist: artists.sample,
   artist_album: artist_albums.sample,
   genre: genres.sample,
 )
 
 ArtistSong36 = ArtistSong.create!(
-  name: Faker::Company.name,
+  title: Faker::Company.name,
   artist: artists.sample,
   artist_album: artist_albums.sample,
   genre: genres.sample,
 )
 
 ArtistSong37 = ArtistSong.create!(
-  name: Faker::Company.name,
+  title: Faker::Company.name,
   artist: artists.sample,
   artist_album: artist_albums.sample,
   genre: genres.sample,
 )
 
 ArtistSong38 = ArtistSong.create!(
-  name: Faker::Company.name,
+  title: Faker::Company.name,
   artist: artists.sample,
   artist_album: artist_albums.sample,
   genre: genres.sample,
 )
 
 ArtistSong39 = ArtistSong.create!(
-  name: Faker::Company.name,
+  title: Faker::Company.name,
   artist: artists.sample,
   artist_album: artist_albums.sample,
   genre: genres.sample,
 )
 
 ArtistSong40 = ArtistSong.create!(
-  name: Faker::Company.name,
+  title: Faker::Company.name,
   artist: artists.sample,
   artist_album: artist_albums.sample,
   genre: genres.sample,
 )
 
 ArtistSong41 = ArtistSong.create!(
-  name: Faker::Company.name,
+  title: Faker::Company.name,
   artist: artists.sample,
   artist_album: artist_albums.sample,
   genre: genres.sample,
@@ -821,14 +823,14 @@ ArtistSong41 = ArtistSong.create!(
 
 
 ArtistSong42 = ArtistSong.create!(
-  name: Faker::Company.name,
+  title: Faker::Company.name,
   artist: artists.sample,
   artist_album: artist_albums.sample,
   genre: genres.sample,
 )
 
 ArtistSong43 = ArtistSong.create!(
-  name: Faker::Company.name,
+  title: Faker::Company.name,
   artist: artists.sample,
   artist_album: artist_albums.sample,
   genre: genres.sample,
@@ -836,7 +838,7 @@ ArtistSong43 = ArtistSong.create!(
 
 
 ArtistSong44 = ArtistSong.create!(
-  name: Faker::Company.name,
+  title: Faker::Company.name,
   artist: artists.sample,
   artist_album: artist_albums.sample,
   genre: genres.sample,
@@ -844,21 +846,21 @@ ArtistSong44 = ArtistSong.create!(
 
 
 ArtistSong45 = ArtistSong.create!(
-  name: Faker::Company.name,
+  title: Faker::Company.name,
   artist: artists.sample,
   artist_album: artist_albums.sample,
   genre: genres.sample,
 )
 
 ArtistSong46 = ArtistSong.create!(
-  name: Faker::Company.name,
+  title: Faker::Company.name,
   artist: artists.sample,
   artist_album: artist_albums.sample,
   genre: genres.sample,
 )
 
 ArtistSong47 = ArtistSong.create!(
-  name: Faker::Company.name,
+  title: Faker::Company.name,
   artist: artists.sample,
   artist_album: artist_albums.sample,
   genre: genres.sample,
@@ -866,7 +868,7 @@ ArtistSong47 = ArtistSong.create!(
 
 
 ArtistSong48 = ArtistSong.create!(
-  name: Faker::Company.name,
+  title: Faker::Company.name,
   artist: artists.sample,
   artist_album: artist_albums.sample,
   genre: genres.sample,
@@ -874,7 +876,7 @@ ArtistSong48 = ArtistSong.create!(
 
 
 ArtistSong49 = ArtistSong.create!(
-  name: Faker::Company.name,
+  title: Faker::Company.name,
   artist: artists.sample,
   artist_album: artist_albums.sample,
   genre: genres.sample,
@@ -882,7 +884,7 @@ ArtistSong49 = ArtistSong.create!(
 
 
 ArtistSong50 = ArtistSong.create!(
-  name: Faker::Company.name,
+  title: Faker::Company.name,
   artist: artists.sample,
   artist_album: artist_albums.sample,
   genre: genres.sample,
@@ -890,28 +892,28 @@ ArtistSong50 = ArtistSong.create!(
 
 
 ArtistSong51 = ArtistSong.create!(
-  name: Faker::Company.name,
+  title: Faker::Company.name,
   artist: artists.sample,
   artist_album: artist_albums.sample,
   genre: genres.sample,
 )
 
 ArtistSong52 = ArtistSong.create!(
-  name: Faker::Company.name,
+  title: Faker::Company.name,
   artist: artists.sample,
   artist_album: artist_albums.sample,
   genre: genres.sample,
 )
 
 ArtistSong53 = ArtistSong.create!(
-  name: Faker::Company.name,
+  title: Faker::Company.name,
   artist: artists.sample,
   artist_album: artist_albums.sample,
   genre: genres.sample,
 )
 
 ArtistSong54 = ArtistSong.create!(
-  name: Faker::Company.name,
+  title: Faker::Company.name,
   artist: artists.sample,
   artist_album: artist_albums.sample,
   genre: genres.sample,
@@ -919,105 +921,105 @@ ArtistSong54 = ArtistSong.create!(
 
 
 ArtistSong55 = ArtistSong.create!(
-  name: Faker::Company.name,
+  title: Faker::Company.name,
   artist: artists.sample,
   artist_album: artist_albums.sample,
   genre: genres.sample,
 )
 
 ArtistSong56 = ArtistSong.create!(
-  name: Faker::Company.name,
+  title: Faker::Company.name,
   artist: artists.sample,
   artist_album: artist_albums.sample,
   genre: genres.sample,
 )
 
 ArtistSong57 = ArtistSong.create!(
-  name: Faker::Company.name,
+  title: Faker::Company.name,
   artist: artists.sample,
   artist_album: artist_albums.sample,
   genre: genres.sample,
 )
 
 ArtistSong58 = ArtistSong.create!(
-  name: Faker::Company.name,
+  title: Faker::Company.name,
   artist: artists.sample,
   artist_album: artist_albums.sample,
   genre: genres.sample,
 )
 
 ArtistSong59 = ArtistSong.create!(
-  name: Faker::Company.name,
+  title: Faker::Company.name,
   artist: artists.sample,
   artist_album: artist_albums.sample,
   genre: genres.sample,
 )
 
 ArtistSong60 = ArtistSong.create!(
-  name: Faker::Company.name,
+  title: Faker::Company.name,
   artist: artists.sample,
   artist_album: artist_albums.sample,
   genre: genres.sample,
 )
 
 ArtistSong61 = ArtistSong.create!(
-  name: Faker::Company.name,
+  title: Faker::Company.name,
   artist: artists.sample,
   artist_album: artist_albums.sample,
   genre: genres.sample,
 )
 
 ArtistSong62 = ArtistSong.create!(
-  name: Faker::Company.name,
+  title: Faker::Company.name,
   artist: artists.sample,
   artist_album: artist_albums.sample,
   genre: genres.sample,
 )
 
 ArtistSong63 = ArtistSong.create!(
-  name: Faker::Company.name,
+  title: Faker::Company.name,
   artist: artists.sample,
   artist_album: artist_albums.sample,
   genre: genres.sample,
 )
 ArtistSong64 = ArtistSong.create!(
-  name: Faker::Company.name,
+  title: Faker::Company.name,
   artist: artists.sample,
   artist_album: artist_albums.sample,
   genre: genres.sample,
 )
 ArtistSong65 = ArtistSong.create!(
-  name: Faker::Company.name,
+  title: Faker::Company.name,
   artist: artists.sample,
   artist_album: artist_albums.sample,
   genre: genres.sample,
 )
 ArtistSong66 = ArtistSong.create!(
-  name: Faker::Company.name,
+  title: Faker::Company.name,
   artist: artists.sample,
   artist_album: artist_albums.sample,
   genre: genres.sample,
 )
 ArtistSong67 = ArtistSong.create!(
-  name: Faker::Company.name,
+  title: Faker::Company.name,
   artist: artists.sample,
   artist_album: artist_albums.sample,
   genre: genres.sample,
 )
 ArtistSong68 = ArtistSong.create!(
-  name: Faker::Company.name,
+  title: Faker::Company.name,
   artist: artists.sample,
   artist_album: artist_albums.sample,
   genre: genres.sample,
 )
 ArtistSong69 = ArtistSong.create!(
-  name: Faker::Company.name,
+  title: Faker::Company.name,
   artist: artists.sample,
   artist_album: artist_albums.sample,
   genre: genres.sample,
 )
 ArtistSong70 = ArtistSong.create!(
-  name: Faker::Company.name,
+  title: Faker::Company.name,
   artist: artists.sample,
   artist_album: artist_albums.sample,
   genre: genres.sample,
