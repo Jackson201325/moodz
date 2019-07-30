@@ -1,8 +1,28 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="home-background">
+    <div class="navbar-home-moodz">
+        <ul>
+            <li><a href="default">Home</a></li>
+            <li><a href="news">News</a></li>
+            <li><a href="contact">Contact</a></li>
+            <li><a href="about">About</a></li>
+        </ul>
 
-<%= simple_form_for(@subscriber) do |f| %>
-  <%= f.input :email %>
-  <%= f.input :purpose, as: :radio_buttons, collection: ['Artist', 'Listener', 'Both', 'Neither'], label: 'I am interested in Moodz as an:' %>
-  <%= f.submit 'Sign me up for updates' %>
-<% end %>
+        <div class="simple_form search">
+            <div class="search-form-control form-group">
+                <input class="form-control string required"/>
+                <button class="btn btn-success">
+                    <i class="fas fa-search"></i><span>Search</span>
+                </button>
+            </div>
+        </div>
+      
+      <h1>Pages#home</h1>
+      <p>Find me in app/views/pages/home.html.erb</p>
+
+      <%= simple_form_for(@subscriber) do |f| %>
+        <%= f.input :email %>
+        <%= f.input :purpose, as: :radio_buttons, collection: ['Artist', 'Listener', 'Both', 'Neither'], label: 'I am interested in Moodz as an:' %>
+        <%= f.submit 'Sign me up for updates' %>
+      <% end %>
+    </div>
+</div>
