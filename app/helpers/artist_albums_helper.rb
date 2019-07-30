@@ -1,0 +1,2 @@
+module ArtistAlbumsHelper
+end
